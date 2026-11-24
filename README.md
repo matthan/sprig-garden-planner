@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+In Progress...
 
-## Getting Started
+## Tech stack
 
-First, run the development server:
+**Frontend**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Next.js](https://nextjs.org/) (App Router) with React
+- [TypeScript](https://www.typescriptlang.org/) (strict mode)
+- [Redux Toolkit](https://redux-toolkit.js.org/): state for the plot designer
+- [Recharts](https://recharts.org/): weather and frost-date charts
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Backend & data**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js Server Components and Server Actions
+- [Prisma](https://www.prisma.io/) ORM
+- [PostgreSQL](https://www.postgresql.org/), hosted on [Neon](https://neon.tech/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**External APIs**
 
-## Learn More
+- [Open-Meteo](https://open-meteo.com/): forecasts, cloud cover, soil temperature, historical weather
+- [phzmapi.org](https://phzmapi.org/): USDA plant hardiness zones by ZIP code
+- [Trefle](https://trefle.io/): plant search and images
 
-To learn more about Next.js, take a look at the following resources:
+**Testing & tooling**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Vitest](https://vitest.dev/): unit tests
+- [Playwright](https://playwright.dev/): end-to-end tests
+- ESLint + Prettier
+- GitHub Actions CI (lint, typecheck, test, build)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Hosting**
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Vercel](https://vercel.com/), with preview deployments for every pull request
